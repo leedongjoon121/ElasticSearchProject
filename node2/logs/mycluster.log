@@ -1,0 +1,54 @@
+[2019-01-28T19:27:16,513][INFO ][o.e.e.NodeEnvironment    ] [node2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [65.7gb], net total_space [233.5gb], types [apfs]
+[2019-01-28T19:27:16,515][INFO ][o.e.e.NodeEnvironment    ] [node2] heap size [989.8mb], compressed ordinary object pointers [true]
+[2019-01-28T19:27:16,517][INFO ][o.e.n.Node               ] [node2] node name [node2], node ID [kqbsky1KTLaGcXvmbSUYpg]
+[2019-01-28T19:27:16,518][INFO ][o.e.n.Node               ] [node2] version[6.5.4], pid[55119], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
+[2019-01-28T19:27:16,518][INFO ][o.e.n.Node               ] [node2] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.O1h38oes, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Desktop/elasticSearch/node2, -Des.path.conf=/Users/lee/Desktop/elasticSearch/node2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [aggs-matrix-stats]
+[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [analysis-common]
+[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [ingest-common]
+[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-expression]
+[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-mustache]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-painless]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [mapper-extras]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [parent-join]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [percolator]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [rank-eval]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [reindex]
+[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [repository-url]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [transport-netty4]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [tribe]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ccr]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-core]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-deprecation]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-graph]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-logstash]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ml]
+[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-monitoring]
+[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-rollup]
+[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-security]
+[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-sql]
+[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-upgrade]
+[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-watcher]
+[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] no plugins loaded
+[2019-01-28T19:27:21,575][INFO ][o.e.x.s.a.s.FileRolesStore] [node2] parsed [0] roles from file [/Users/lee/Desktop/elasticSearch/node2/config/roles.yml]
+[2019-01-28T19:27:22,055][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node2] [controller/55143] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
+[2019-01-28T19:27:22,468][DEBUG][o.e.a.ActionModule       ] [node2] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2019-01-28T19:27:22,645][INFO ][o.e.d.DiscoveryModule    ] [node2] using discovery type [zen] and host providers [settings]
+[2019-01-28T19:27:23,404][INFO ][o.e.n.Node               ] [node2] initialized
+[2019-01-28T19:27:23,405][INFO ][o.e.n.Node               ] [node2] starting ...
+[2019-01-28T19:27:23,586][INFO ][o.e.t.TransportService   ] [node2] publish_address {127.0.0.1:9301}, bound_addresses {[::1]:9301}, {127.0.0.1:9301}
+[2019-01-28T19:27:26,932][INFO ][o.e.c.s.ClusterApplierService] [node2] detected_master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}, added {{node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [15]])
+[2019-01-28T19:27:27,168][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node2] Failed to clear cache for realms [[]]
+[2019-01-28T19:27:27,170][INFO ][o.e.x.s.a.TokenService   ] [node2] refresh keys
+[2019-01-28T19:27:27,452][INFO ][o.e.x.s.a.TokenService   ] [node2] refreshed keys
+[2019-01-28T19:27:27,486][INFO ][o.e.l.LicenseService     ] [node2] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
+[2019-01-28T19:27:27,514][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node2] publish_address {127.0.0.1:9201}, bound_addresses {[::1]:9201}, {127.0.0.1:9201}
+[2019-01-28T19:27:27,515][INFO ][o.e.n.Node               ] [node2] started
+[2019-01-28T19:27:55,962][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{dryvvnP-TmuGWdyaBJocWw}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [16]])
+[2019-01-28T19:28:42,997][INFO ][o.e.c.s.ClusterApplierService] [node2] removed {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{dryvvnP-TmuGWdyaBJocWw}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [17]])
+[2019-01-28T19:28:45,273][INFO ][o.e.x.m.j.p.NativeController] [node2] Native controller process has stopped - no new native processes can be started
+[2019-01-28T19:28:45,273][INFO ][o.e.n.Node               ] [node2] stopping ...
+[2019-01-28T19:28:45,287][INFO ][o.e.x.w.WatcherService   ] [node2] stopping watch service, reason [shutdown initiated]
+[2019-01-28T19:28:45,539][INFO ][o.e.n.Node               ] [node2] stopped
+[2019-01-28T19:28:45,540][INFO ][o.e.n.Node               ] [node2] closing ...
+[2019-01-28T19:28:45,548][INFO ][o.e.n.Node               ] [node2] closed
