@@ -1,98 +1,53 @@
-[2019-01-28T19:27:45,750][INFO ][o.e.e.NodeEnvironment    ] [node3] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [65.7gb], net total_space [233.5gb], types [apfs]
-[2019-01-28T19:27:45,752][INFO ][o.e.e.NodeEnvironment    ] [node3] heap size [989.8mb], compressed ordinary object pointers [true]
-[2019-01-28T19:27:45,754][INFO ][o.e.n.Node               ] [node3] node name [node3], node ID [h2hIpXC_Tv2Ze80D7dUejw]
-[2019-01-28T19:27:45,755][INFO ][o.e.n.Node               ] [node3] version[6.5.4], pid[55169], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
-[2019-01-28T19:27:45,755][INFO ][o.e.n.Node               ] [node3] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.iQIDXmlC, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Desktop/elasticSearch/node3, -Des.path.conf=/Users/lee/Desktop/elasticSearch/node3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
-[2019-01-28T19:27:47,627][INFO ][o.e.p.PluginsService     ] [node3] loaded module [aggs-matrix-stats]
-[2019-01-28T19:27:47,627][INFO ][o.e.p.PluginsService     ] [node3] loaded module [analysis-common]
-[2019-01-28T19:27:47,627][INFO ][o.e.p.PluginsService     ] [node3] loaded module [ingest-common]
-[2019-01-28T19:27:47,627][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-expression]
-[2019-01-28T19:27:47,627][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-mustache]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-painless]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [mapper-extras]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [parent-join]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [percolator]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [rank-eval]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [reindex]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [repository-url]
-[2019-01-28T19:27:47,628][INFO ][o.e.p.PluginsService     ] [node3] loaded module [transport-netty4]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [tribe]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-ccr]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-core]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-deprecation]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-graph]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-logstash]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-ml]
-[2019-01-28T19:27:47,629][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-monitoring]
-[2019-01-28T19:27:47,630][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-rollup]
-[2019-01-28T19:27:47,630][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-security]
-[2019-01-28T19:27:47,630][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-sql]
-[2019-01-28T19:27:47,630][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-upgrade]
-[2019-01-28T19:27:47,630][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-watcher]
-[2019-01-28T19:27:47,630][INFO ][o.e.p.PluginsService     ] [node3] no plugins loaded
-[2019-01-28T19:27:50,617][INFO ][o.e.x.s.a.s.FileRolesStore] [node3] parsed [0] roles from file [/Users/lee/Desktop/elasticSearch/node3/config/roles.yml]
-[2019-01-28T19:27:51,122][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node3] [controller/55187] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
-[2019-01-28T19:27:51,539][DEBUG][o.e.a.ActionModule       ] [node3] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
-[2019-01-28T19:27:51,718][INFO ][o.e.d.DiscoveryModule    ] [node3] using discovery type [zen] and host providers [settings]
-[2019-01-28T19:27:52,456][INFO ][o.e.n.Node               ] [node3] initialized
-[2019-01-28T19:27:52,457][INFO ][o.e.n.Node               ] [node3] starting ...
-[2019-01-28T19:27:52,636][INFO ][o.e.t.TransportService   ] [node3] publish_address {127.0.0.1:9302}, bound_addresses {[::1]:9302}, {127.0.0.1:9302}
-[2019-01-28T19:27:55,961][INFO ][o.e.c.s.ClusterApplierService] [node3] detected_master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}, added {{node2}{kqbsky1KTLaGcXvmbSUYpg}{y96mB2bPRpWm7v5B7s7_-A}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},{node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [16]])
-[2019-01-28T19:27:56,226][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node3] Failed to clear cache for realms [[]]
-[2019-01-28T19:27:56,228][INFO ][o.e.x.s.a.TokenService   ] [node3] refresh keys
-[2019-01-28T19:27:56,544][INFO ][o.e.x.s.a.TokenService   ] [node3] refreshed keys
-[2019-01-28T19:27:56,589][INFO ][o.e.l.LicenseService     ] [node3] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
-[2019-01-28T19:27:56,617][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node3] publish_address {127.0.0.1:9202}, bound_addresses {[::1]:9202}, {127.0.0.1:9202}
-[2019-01-28T19:27:56,617][INFO ][o.e.n.Node               ] [node3] started
-[2019-01-28T19:28:42,977][INFO ][o.e.x.m.j.p.NativeController] [node3] Native controller process has stopped - no new native processes can be started
-[2019-01-28T19:28:42,978][INFO ][o.e.n.Node               ] [node3] stopping ...
-[2019-01-28T19:28:42,994][INFO ][o.e.x.w.WatcherService   ] [node3] stopping watch service, reason [shutdown initiated]
-[2019-01-28T19:28:43,396][INFO ][o.e.n.Node               ] [node3] stopped
-[2019-01-28T19:28:43,396][INFO ][o.e.n.Node               ] [node3] closing ...
-[2019-01-28T19:28:43,403][INFO ][o.e.n.Node               ] [node3] closed
-[2019-01-28T23:41:21,825][INFO ][o.e.e.NodeEnvironment    ] [node3] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [64.9gb], net total_space [233.5gb], types [apfs]
-[2019-01-28T23:41:21,828][INFO ][o.e.e.NodeEnvironment    ] [node3] heap size [989.8mb], compressed ordinary object pointers [true]
-[2019-01-28T23:41:21,830][INFO ][o.e.n.Node               ] [node3] node name [node3], node ID [h2hIpXC_Tv2Ze80D7dUejw]
-[2019-01-28T23:41:21,831][INFO ][o.e.n.Node               ] [node3] version[6.5.4], pid[60134], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
-[2019-01-28T23:41:21,831][INFO ][o.e.n.Node               ] [node3] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.iakoEZOr, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Documents/Github/ElasticSearchProject/node3, -Des.path.conf=/Users/lee/Documents/Github/ElasticSearchProject/node3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
-[2019-01-28T23:41:23,536][INFO ][o.e.p.PluginsService     ] [node3] loaded module [aggs-matrix-stats]
-[2019-01-28T23:41:23,536][INFO ][o.e.p.PluginsService     ] [node3] loaded module [analysis-common]
-[2019-01-28T23:41:23,536][INFO ][o.e.p.PluginsService     ] [node3] loaded module [ingest-common]
-[2019-01-28T23:41:23,536][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-expression]
-[2019-01-28T23:41:23,536][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-mustache]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-painless]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [mapper-extras]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [parent-join]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [percolator]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [rank-eval]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [reindex]
-[2019-01-28T23:41:23,537][INFO ][o.e.p.PluginsService     ] [node3] loaded module [repository-url]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [transport-netty4]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [tribe]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-ccr]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-core]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-deprecation]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-graph]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-logstash]
-[2019-01-28T23:41:23,538][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-ml]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-monitoring]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-rollup]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-security]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-sql]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-upgrade]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-watcher]
-[2019-01-28T23:41:23,539][INFO ][o.e.p.PluginsService     ] [node3] no plugins loaded
-[2019-01-28T23:41:26,547][INFO ][o.e.x.s.a.s.FileRolesStore] [node3] parsed [0] roles from file [/Users/lee/Documents/Github/ElasticSearchProject/node3/config/roles.yml]
-[2019-01-28T23:41:26,923][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node3] [controller/60153] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
-[2019-01-28T23:41:27,288][DEBUG][o.e.a.ActionModule       ] [node3] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
-[2019-01-28T23:41:27,477][INFO ][o.e.d.DiscoveryModule    ] [node3] using discovery type [zen] and host providers [settings]
-[2019-01-28T23:41:28,183][INFO ][o.e.n.Node               ] [node3] initialized
-[2019-01-28T23:41:28,184][INFO ][o.e.n.Node               ] [node3] starting ...
-[2019-01-28T23:41:28,331][INFO ][o.e.t.TransportService   ] [node3] publish_address {127.0.0.1:9302}, bound_addresses {[::1]:9302}, {127.0.0.1:9302}
-[2019-01-28T23:41:31,639][INFO ][o.e.c.s.ClusterApplierService] [node3] detected_master {node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}, added {{node2}{kqbsky1KTLaGcXvmbSUYpg}{NUjaYOA7Q3GkCAyavWFvnw}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},{node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [5]])
-[2019-01-28T23:41:31,854][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node3] Failed to clear cache for realms [[]]
-[2019-01-28T23:41:31,856][INFO ][o.e.x.s.a.TokenService   ] [node3] refresh keys
-[2019-01-28T23:41:32,141][INFO ][o.e.x.s.a.TokenService   ] [node3] refreshed keys
-[2019-01-28T23:41:32,174][INFO ][o.e.l.LicenseService     ] [node3] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
-[2019-01-28T23:41:32,198][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node3] publish_address {127.0.0.1:9202}, bound_addresses {[::1]:9202}, {127.0.0.1:9202}
-[2019-01-28T23:41:32,199][INFO ][o.e.n.Node               ] [node3] started
+[2019-01-29T00:49:19,331][INFO ][o.e.x.m.j.p.NativeController] [node3] Native controller process has stopped - no new native processes can be started
+[2019-01-29T00:49:19,329][INFO ][o.e.n.Node               ] [node3] stopping ...
+[2019-01-29T00:49:19,350][INFO ][o.e.x.w.WatcherService   ] [node3] stopping watch service, reason [shutdown initiated]
+[2019-01-29T00:49:19,715][INFO ][o.e.n.Node               ] [node3] stopped
+[2019-01-29T00:49:19,715][INFO ][o.e.n.Node               ] [node3] closing ...
+[2019-01-29T00:49:19,723][INFO ][o.e.n.Node               ] [node3] closed
+[2019-01-29T12:00:03,702][INFO ][o.e.e.NodeEnvironment    ] [node3] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [64.7gb], net total_space [233.5gb], types [apfs]
+[2019-01-29T12:00:03,706][INFO ][o.e.e.NodeEnvironment    ] [node3] heap size [989.8mb], compressed ordinary object pointers [true]
+[2019-01-29T12:00:03,740][INFO ][o.e.n.Node               ] [node3] node name [node3], node ID [h2hIpXC_Tv2Ze80D7dUejw]
+[2019-01-29T12:00:03,741][INFO ][o.e.n.Node               ] [node3] version[6.5.4], pid[80884], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
+[2019-01-29T12:00:03,741][INFO ][o.e.n.Node               ] [node3] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.500UcpfW, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Documents/Github/ElasticSearchProject/node3, -Des.path.conf=/Users/lee/Documents/Github/ElasticSearchProject/node3/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2019-01-29T12:00:06,816][INFO ][o.e.p.PluginsService     ] [node3] loaded module [aggs-matrix-stats]
+[2019-01-29T12:00:06,817][INFO ][o.e.p.PluginsService     ] [node3] loaded module [analysis-common]
+[2019-01-29T12:00:06,817][INFO ][o.e.p.PluginsService     ] [node3] loaded module [ingest-common]
+[2019-01-29T12:00:06,818][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-expression]
+[2019-01-29T12:00:06,818][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-mustache]
+[2019-01-29T12:00:06,819][INFO ][o.e.p.PluginsService     ] [node3] loaded module [lang-painless]
+[2019-01-29T12:00:06,819][INFO ][o.e.p.PluginsService     ] [node3] loaded module [mapper-extras]
+[2019-01-29T12:00:06,819][INFO ][o.e.p.PluginsService     ] [node3] loaded module [parent-join]
+[2019-01-29T12:00:06,819][INFO ][o.e.p.PluginsService     ] [node3] loaded module [percolator]
+[2019-01-29T12:00:06,820][INFO ][o.e.p.PluginsService     ] [node3] loaded module [rank-eval]
+[2019-01-29T12:00:06,820][INFO ][o.e.p.PluginsService     ] [node3] loaded module [reindex]
+[2019-01-29T12:00:06,820][INFO ][o.e.p.PluginsService     ] [node3] loaded module [repository-url]
+[2019-01-29T12:00:06,821][INFO ][o.e.p.PluginsService     ] [node3] loaded module [transport-netty4]
+[2019-01-29T12:00:06,821][INFO ][o.e.p.PluginsService     ] [node3] loaded module [tribe]
+[2019-01-29T12:00:06,821][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-ccr]
+[2019-01-29T12:00:06,822][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-core]
+[2019-01-29T12:00:06,822][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-deprecation]
+[2019-01-29T12:00:06,823][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-graph]
+[2019-01-29T12:00:06,823][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-logstash]
+[2019-01-29T12:00:06,824][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-ml]
+[2019-01-29T12:00:06,824][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-monitoring]
+[2019-01-29T12:00:06,824][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-rollup]
+[2019-01-29T12:00:06,824][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-security]
+[2019-01-29T12:00:06,824][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-sql]
+[2019-01-29T12:00:06,825][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-upgrade]
+[2019-01-29T12:00:06,825][INFO ][o.e.p.PluginsService     ] [node3] loaded module [x-pack-watcher]
+[2019-01-29T12:00:06,825][INFO ][o.e.p.PluginsService     ] [node3] no plugins loaded
+[2019-01-29T12:00:13,832][INFO ][o.e.x.s.a.s.FileRolesStore] [node3] parsed [0] roles from file [/Users/lee/Documents/Github/ElasticSearchProject/node3/config/roles.yml]
+[2019-01-29T12:00:14,524][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node3] [controller/80922] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
+[2019-01-29T12:00:15,039][DEBUG][o.e.a.ActionModule       ] [node3] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2019-01-29T12:00:15,286][INFO ][o.e.d.DiscoveryModule    ] [node3] using discovery type [zen] and host providers [settings]
+[2019-01-29T12:00:16,274][INFO ][o.e.n.Node               ] [node3] initialized
+[2019-01-29T12:00:16,275][INFO ][o.e.n.Node               ] [node3] starting ...
+[2019-01-29T12:00:16,518][INFO ][o.e.t.TransportService   ] [node3] publish_address {127.0.0.1:9301}, bound_addresses {[::1]:9301}, {127.0.0.1:9301}
+[2019-01-29T12:00:20,070][INFO ][o.e.c.s.ClusterApplierService] [node3] detected_master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}, added {{node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [9]])
+[2019-01-29T12:00:20,317][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node3] Failed to clear cache for realms [[]]
+[2019-01-29T12:00:20,319][INFO ][o.e.x.s.a.TokenService   ] [node3] refresh keys
+[2019-01-29T12:00:20,613][INFO ][o.e.x.s.a.TokenService   ] [node3] refreshed keys
+[2019-01-29T12:00:20,648][INFO ][o.e.l.LicenseService     ] [node3] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
+[2019-01-29T12:00:20,675][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node3] publish_address {127.0.0.1:9202}, bound_addresses {[::1]:9202}, {127.0.0.1:9202}
+[2019-01-29T12:00:20,676][INFO ][o.e.n.Node               ] [node3] started
+[2019-01-29T12:00:22,358][INFO ][o.e.c.s.ClusterApplierService] [node3] added {{node1}{yLktuNUWRzOwUizM7se3hQ}{78AQd4GiTSmn_BtxpLb50w}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [23]])

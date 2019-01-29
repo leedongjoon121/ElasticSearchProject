@@ -1,160 +1,66 @@
-[2019-01-28T19:27:16,513][INFO ][o.e.e.NodeEnvironment    ] [node2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [65.7gb], net total_space [233.5gb], types [apfs]
-[2019-01-28T19:27:16,515][INFO ][o.e.e.NodeEnvironment    ] [node2] heap size [989.8mb], compressed ordinary object pointers [true]
-[2019-01-28T19:27:16,517][INFO ][o.e.n.Node               ] [node2] node name [node2], node ID [kqbsky1KTLaGcXvmbSUYpg]
-[2019-01-28T19:27:16,518][INFO ][o.e.n.Node               ] [node2] version[6.5.4], pid[55119], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
-[2019-01-28T19:27:16,518][INFO ][o.e.n.Node               ] [node2] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.O1h38oes, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Desktop/elasticSearch/node2, -Des.path.conf=/Users/lee/Desktop/elasticSearch/node2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
-[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [aggs-matrix-stats]
-[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [analysis-common]
-[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [ingest-common]
-[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-expression]
-[2019-01-28T19:27:18,309][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-mustache]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-painless]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [mapper-extras]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [parent-join]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [percolator]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [rank-eval]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [reindex]
-[2019-01-28T19:27:18,310][INFO ][o.e.p.PluginsService     ] [node2] loaded module [repository-url]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [transport-netty4]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [tribe]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ccr]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-core]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-deprecation]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-graph]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-logstash]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ml]
-[2019-01-28T19:27:18,311][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-monitoring]
-[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-rollup]
-[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-security]
-[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-sql]
-[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-upgrade]
-[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-watcher]
-[2019-01-28T19:27:18,312][INFO ][o.e.p.PluginsService     ] [node2] no plugins loaded
-[2019-01-28T19:27:21,575][INFO ][o.e.x.s.a.s.FileRolesStore] [node2] parsed [0] roles from file [/Users/lee/Desktop/elasticSearch/node2/config/roles.yml]
-[2019-01-28T19:27:22,055][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node2] [controller/55143] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
-[2019-01-28T19:27:22,468][DEBUG][o.e.a.ActionModule       ] [node2] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
-[2019-01-28T19:27:22,645][INFO ][o.e.d.DiscoveryModule    ] [node2] using discovery type [zen] and host providers [settings]
-[2019-01-28T19:27:23,404][INFO ][o.e.n.Node               ] [node2] initialized
-[2019-01-28T19:27:23,405][INFO ][o.e.n.Node               ] [node2] starting ...
-[2019-01-28T19:27:23,586][INFO ][o.e.t.TransportService   ] [node2] publish_address {127.0.0.1:9301}, bound_addresses {[::1]:9301}, {127.0.0.1:9301}
-[2019-01-28T19:27:26,932][INFO ][o.e.c.s.ClusterApplierService] [node2] detected_master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}, added {{node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [15]])
-[2019-01-28T19:27:27,168][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node2] Failed to clear cache for realms [[]]
-[2019-01-28T19:27:27,170][INFO ][o.e.x.s.a.TokenService   ] [node2] refresh keys
-[2019-01-28T19:27:27,452][INFO ][o.e.x.s.a.TokenService   ] [node2] refreshed keys
-[2019-01-28T19:27:27,486][INFO ][o.e.l.LicenseService     ] [node2] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
-[2019-01-28T19:27:27,514][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node2] publish_address {127.0.0.1:9201}, bound_addresses {[::1]:9201}, {127.0.0.1:9201}
-[2019-01-28T19:27:27,515][INFO ][o.e.n.Node               ] [node2] started
-[2019-01-28T19:27:55,962][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{dryvvnP-TmuGWdyaBJocWw}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [16]])
-[2019-01-28T19:28:42,997][INFO ][o.e.c.s.ClusterApplierService] [node2] removed {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{dryvvnP-TmuGWdyaBJocWw}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{aD6c03aXS6O8Y6d8bykamg}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [17]])
-[2019-01-28T19:28:45,273][INFO ][o.e.x.m.j.p.NativeController] [node2] Native controller process has stopped - no new native processes can be started
-[2019-01-28T19:28:45,273][INFO ][o.e.n.Node               ] [node2] stopping ...
-[2019-01-28T19:28:45,287][INFO ][o.e.x.w.WatcherService   ] [node2] stopping watch service, reason [shutdown initiated]
-[2019-01-28T19:28:45,539][INFO ][o.e.n.Node               ] [node2] stopped
-[2019-01-28T19:28:45,540][INFO ][o.e.n.Node               ] [node2] closing ...
-[2019-01-28T19:28:45,548][INFO ][o.e.n.Node               ] [node2] closed
-[2019-01-28T23:15:33,963][INFO ][o.e.e.NodeEnvironment    ] [node2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [64.9gb], net total_space [233.5gb], types [apfs]
-[2019-01-28T23:15:33,966][INFO ][o.e.e.NodeEnvironment    ] [node2] heap size [989.8mb], compressed ordinary object pointers [true]
-[2019-01-28T23:15:33,967][INFO ][o.e.n.Node               ] [node2] node name [node2], node ID [kqbsky1KTLaGcXvmbSUYpg]
-[2019-01-28T23:15:33,968][INFO ][o.e.n.Node               ] [node2] version[6.5.4], pid[58567], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
-[2019-01-28T23:15:33,968][INFO ][o.e.n.Node               ] [node2] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.fDwoSi3W, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Documents/GitHub/ElasticSearchProject/node2, -Des.path.conf=/Users/lee/Documents/GitHub/ElasticSearchProject/node2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
-[2019-01-28T23:15:35,633][INFO ][o.e.p.PluginsService     ] [node2] loaded module [aggs-matrix-stats]
-[2019-01-28T23:15:35,634][INFO ][o.e.p.PluginsService     ] [node2] loaded module [analysis-common]
-[2019-01-28T23:15:35,634][INFO ][o.e.p.PluginsService     ] [node2] loaded module [ingest-common]
-[2019-01-28T23:15:35,634][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-expression]
-[2019-01-28T23:15:35,634][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-mustache]
-[2019-01-28T23:15:35,634][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-painless]
-[2019-01-28T23:15:35,635][INFO ][o.e.p.PluginsService     ] [node2] loaded module [mapper-extras]
-[2019-01-28T23:15:35,635][INFO ][o.e.p.PluginsService     ] [node2] loaded module [parent-join]
-[2019-01-28T23:15:35,635][INFO ][o.e.p.PluginsService     ] [node2] loaded module [percolator]
-[2019-01-28T23:15:35,635][INFO ][o.e.p.PluginsService     ] [node2] loaded module [rank-eval]
-[2019-01-28T23:15:35,635][INFO ][o.e.p.PluginsService     ] [node2] loaded module [reindex]
-[2019-01-28T23:15:35,636][INFO ][o.e.p.PluginsService     ] [node2] loaded module [repository-url]
-[2019-01-28T23:15:35,636][INFO ][o.e.p.PluginsService     ] [node2] loaded module [transport-netty4]
-[2019-01-28T23:15:35,636][INFO ][o.e.p.PluginsService     ] [node2] loaded module [tribe]
-[2019-01-28T23:15:35,636][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ccr]
-[2019-01-28T23:15:35,636][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-core]
-[2019-01-28T23:15:35,636][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-deprecation]
-[2019-01-28T23:15:35,637][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-graph]
-[2019-01-28T23:15:35,637][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-logstash]
-[2019-01-28T23:15:35,637][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ml]
-[2019-01-28T23:15:35,637][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-monitoring]
-[2019-01-28T23:15:35,637][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-rollup]
-[2019-01-28T23:15:35,638][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-security]
-[2019-01-28T23:15:35,638][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-sql]
-[2019-01-28T23:15:35,638][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-upgrade]
-[2019-01-28T23:15:35,638][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-watcher]
-[2019-01-28T23:15:35,639][INFO ][o.e.p.PluginsService     ] [node2] no plugins loaded
-[2019-01-28T23:15:40,344][INFO ][o.e.x.s.a.s.FileRolesStore] [node2] parsed [0] roles from file [/Users/lee/Documents/GitHub/ElasticSearchProject/node2/config/roles.yml]
-[2019-01-28T23:15:40,991][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node2] [controller/58585] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
-[2019-01-28T23:15:41,829][DEBUG][o.e.a.ActionModule       ] [node2] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
-[2019-01-28T23:15:42,359][INFO ][o.e.d.DiscoveryModule    ] [node2] using discovery type [zen] and host providers [settings]
-[2019-01-28T23:15:44,117][INFO ][o.e.n.Node               ] [node2] initialized
-[2019-01-28T23:15:44,118][INFO ][o.e.n.Node               ] [node2] starting ...
-[2019-01-28T23:15:44,488][INFO ][o.e.t.TransportService   ] [node2] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
-[2019-01-28T23:15:47,660][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {node2}{kqbsky1KTLaGcXvmbSUYpg}{OG3TN7KPTwedxSC2dOpy4Q}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
-[2019-01-28T23:15:47,667][INFO ][o.e.c.s.ClusterApplierService] [node2] new_master {node2}{kqbsky1KTLaGcXvmbSUYpg}{OG3TN7KPTwedxSC2dOpy4Q}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{OG3TN7KPTwedxSC2dOpy4Q}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
-[2019-01-28T23:15:47,693][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node2] publish_address {127.0.0.1:9201}, bound_addresses {[::1]:9201}, {127.0.0.1:9201}
-[2019-01-28T23:15:47,696][INFO ][o.e.n.Node               ] [node2] started
-[2019-01-28T23:15:48,145][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node2] Failed to clear cache for realms [[]]
-[2019-01-28T23:15:48,257][INFO ][o.e.l.LicenseService     ] [node2] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
-[2019-01-28T23:15:48,275][INFO ][o.e.g.GatewayService     ] [node2] recovered [0] indices into cluster_state
-[2019-01-28T23:15:53,919][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-node-join[{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}], reason: added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}
-[2019-01-28T23:15:54,649][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{OG3TN7KPTwedxSC2dOpy4Q}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [4] source [zen-disco-node-join[{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}]]])
-[2019-01-28T23:15:54,652][WARN ][o.e.d.z.ElectMasterService] [node2] value for setting "discovery.zen.minimum_master_nodes" is too low. This can result in data loss! Please set it to at least a quorum of master-eligible nodes (current value: [-1], total number of master-eligible nodes used for publishing in this round: [2])
-[2019-01-28T23:15:55,145][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-node-join[{node1}{yLktuNUWRzOwUizM7se3hQ}{UWxWcIfwTxKuNT9vP5JSvg}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}], reason: added {{node1}{yLktuNUWRzOwUizM7se3hQ}{UWxWcIfwTxKuNT9vP5JSvg}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}
-[2019-01-28T23:15:55,878][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node1}{yLktuNUWRzOwUizM7se3hQ}{UWxWcIfwTxKuNT9vP5JSvg}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{OG3TN7KPTwedxSC2dOpy4Q}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [5] source [zen-disco-node-join[{node1}{yLktuNUWRzOwUizM7se3hQ}{UWxWcIfwTxKuNT9vP5JSvg}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}]]])
-[2019-01-28T23:18:30,804][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-node-left({node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}), reason(left)[{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} left], reason: removed {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}
-[2019-01-28T23:18:30,817][INFO ][o.e.c.s.ClusterApplierService] [node2] removed {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{OG3TN7KPTwedxSC2dOpy4Q}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [6] source [zen-disco-node-left({node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}), reason(left)[{node3}{h2hIpXC_Tv2Ze80D7dUejw}{cQLrfmL1Rb2YH3C2IEU2NQ}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} left]]])
-[2019-01-28T23:18:32,014][INFO ][o.e.n.Node               ] [node2] stopping ...
-[2019-01-28T23:18:32,015][INFO ][o.e.x.m.j.p.NativeController] [node2] Native controller process has stopped - no new native processes can be started
-[2019-01-28T23:18:32,027][INFO ][o.e.x.w.WatcherService   ] [node2] stopping watch service, reason [shutdown initiated]
-[2019-01-28T23:18:32,364][INFO ][o.e.n.Node               ] [node2] stopped
-[2019-01-28T23:18:32,364][INFO ][o.e.n.Node               ] [node2] closing ...
-[2019-01-28T23:18:32,372][INFO ][o.e.n.Node               ] [node2] closed
-[2019-01-28T23:40:37,581][INFO ][o.e.e.NodeEnvironment    ] [node2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [64.9gb], net total_space [233.5gb], types [apfs]
-[2019-01-28T23:40:37,583][INFO ][o.e.e.NodeEnvironment    ] [node2] heap size [989.8mb], compressed ordinary object pointers [true]
-[2019-01-28T23:40:37,585][INFO ][o.e.n.Node               ] [node2] node name [node2], node ID [kqbsky1KTLaGcXvmbSUYpg]
-[2019-01-28T23:40:37,585][INFO ][o.e.n.Node               ] [node2] version[6.5.4], pid[60069], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
-[2019-01-28T23:40:37,586][INFO ][o.e.n.Node               ] [node2] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.92qw43Q4, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Documents/Github/ElasticSearchProject/node2, -Des.path.conf=/Users/lee/Documents/Github/ElasticSearchProject/node2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [aggs-matrix-stats]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [analysis-common]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [ingest-common]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-expression]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-mustache]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-painless]
-[2019-01-28T23:40:39,257][INFO ][o.e.p.PluginsService     ] [node2] loaded module [mapper-extras]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [parent-join]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [percolator]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [rank-eval]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [reindex]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [repository-url]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [transport-netty4]
-[2019-01-28T23:40:39,258][INFO ][o.e.p.PluginsService     ] [node2] loaded module [tribe]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ccr]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-core]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-deprecation]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-graph]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-logstash]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ml]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-monitoring]
-[2019-01-28T23:40:39,259][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-rollup]
-[2019-01-28T23:40:39,260][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-security]
-[2019-01-28T23:40:39,260][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-sql]
-[2019-01-28T23:40:39,260][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-upgrade]
-[2019-01-28T23:40:39,260][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-watcher]
-[2019-01-28T23:40:39,260][INFO ][o.e.p.PluginsService     ] [node2] no plugins loaded
-[2019-01-28T23:40:42,348][INFO ][o.e.x.s.a.s.FileRolesStore] [node2] parsed [0] roles from file [/Users/lee/Documents/Github/ElasticSearchProject/node2/config/roles.yml]
-[2019-01-28T23:40:42,720][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node2] [controller/60087] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
-[2019-01-28T23:40:43,084][DEBUG][o.e.a.ActionModule       ] [node2] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
-[2019-01-28T23:40:43,263][INFO ][o.e.d.DiscoveryModule    ] [node2] using discovery type [zen] and host providers [settings]
-[2019-01-28T23:40:43,950][INFO ][o.e.n.Node               ] [node2] initialized
-[2019-01-28T23:40:43,950][INFO ][o.e.n.Node               ] [node2] starting ...
-[2019-01-28T23:40:44,095][INFO ][o.e.t.TransportService   ] [node2] publish_address {127.0.0.1:9301}, bound_addresses {[::1]:9301}, {127.0.0.1:9301}
-[2019-01-28T23:40:47,486][INFO ][o.e.c.s.ClusterApplierService] [node2] detected_master {node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}, added {{node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [4]])
-[2019-01-28T23:40:47,686][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node2] Failed to clear cache for realms [[]]
-[2019-01-28T23:40:47,687][INFO ][o.e.x.s.a.TokenService   ] [node2] refresh keys
-[2019-01-28T23:40:47,970][INFO ][o.e.x.s.a.TokenService   ] [node2] refreshed keys
-[2019-01-28T23:40:48,003][INFO ][o.e.l.LicenseService     ] [node2] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
-[2019-01-28T23:40:48,023][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node2] publish_address {127.0.0.1:9201}, bound_addresses {[::1]:9201}, {127.0.0.1:9201}
-[2019-01-28T23:40:48,023][INFO ][o.e.n.Node               ] [node2] started
-[2019-01-28T23:41:31,640][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{Kdh9FVLzTMC5-Yty7QqjlA}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [5]])
+[2019-01-29T00:49:19,366][INFO ][o.e.c.s.ClusterApplierService] [node2] removed {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{Kdh9FVLzTMC5-Yty7QqjlA}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node1}{yLktuNUWRzOwUizM7se3hQ}{vAgZJeiyS4eiP55UsXMQLQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true} committed version [26]])
+[2019-01-29T00:49:19,388][INFO ][o.e.i.s.IndexShard       ] [node2] [news][4] primary-replica resync completed with 0 operations
+[2019-01-29T00:49:21,530][INFO ][o.e.n.Node               ] [node2] stopping ...
+[2019-01-29T00:49:21,532][INFO ][o.e.x.m.j.p.NativeController] [node2] Native controller process has stopped - no new native processes can be started
+[2019-01-29T00:49:21,541][INFO ][o.e.x.w.WatcherService   ] [node2] stopping watch service, reason [shutdown initiated]
+[2019-01-29T00:49:21,582][WARN ][o.e.x.s.t.n.SecurityNetty4ServerTransport] [node2] send message failed [channel: NettyTcpChannel{localAddress=0.0.0.0/0.0.0.0:9301, remoteAddress=/127.0.0.1:58250}]
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(...)(Unknown Source) ~[?:?]
+[2019-01-29T00:49:21,730][INFO ][o.e.n.Node               ] [node2] stopped
+[2019-01-29T00:49:21,731][INFO ][o.e.n.Node               ] [node2] closing ...
+[2019-01-29T00:49:21,739][INFO ][o.e.n.Node               ] [node2] closed
+[2019-01-29T12:00:01,476][INFO ][o.e.e.NodeEnvironment    ] [node2] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [64.7gb], net total_space [233.5gb], types [apfs]
+[2019-01-29T12:00:01,480][INFO ][o.e.e.NodeEnvironment    ] [node2] heap size [989.8mb], compressed ordinary object pointers [true]
+[2019-01-29T12:00:01,503][INFO ][o.e.n.Node               ] [node2] node name [node2], node ID [kqbsky1KTLaGcXvmbSUYpg]
+[2019-01-29T12:00:01,504][INFO ][o.e.n.Node               ] [node2] version[6.5.4], pid[80866], build[default/tar/d2ef93d/2018-12-17T21:17:40.758843Z], OS[Mac OS X/10.13.6/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_161/25.161-b12]
+[2019-01-29T12:00:01,504][INFO ][o.e.n.Node               ] [node2] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/7z/_n8z7gpd5_1dmylfy_sbc6m00000gn/T/elasticsearch.dPS7JqKU, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/Users/lee/Documents/Github/ElasticSearchProject/node2, -Des.path.conf=/Users/lee/Documents/Github/ElasticSearchProject/node2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+[2019-01-29T12:00:03,681][INFO ][o.e.p.PluginsService     ] [node2] loaded module [aggs-matrix-stats]
+[2019-01-29T12:00:03,681][INFO ][o.e.p.PluginsService     ] [node2] loaded module [analysis-common]
+[2019-01-29T12:00:03,681][INFO ][o.e.p.PluginsService     ] [node2] loaded module [ingest-common]
+[2019-01-29T12:00:03,681][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-expression]
+[2019-01-29T12:00:03,681][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-mustache]
+[2019-01-29T12:00:03,682][INFO ][o.e.p.PluginsService     ] [node2] loaded module [lang-painless]
+[2019-01-29T12:00:03,682][INFO ][o.e.p.PluginsService     ] [node2] loaded module [mapper-extras]
+[2019-01-29T12:00:03,682][INFO ][o.e.p.PluginsService     ] [node2] loaded module [parent-join]
+[2019-01-29T12:00:03,682][INFO ][o.e.p.PluginsService     ] [node2] loaded module [percolator]
+[2019-01-29T12:00:03,682][INFO ][o.e.p.PluginsService     ] [node2] loaded module [rank-eval]
+[2019-01-29T12:00:03,683][INFO ][o.e.p.PluginsService     ] [node2] loaded module [reindex]
+[2019-01-29T12:00:03,683][INFO ][o.e.p.PluginsService     ] [node2] loaded module [repository-url]
+[2019-01-29T12:00:03,683][INFO ][o.e.p.PluginsService     ] [node2] loaded module [transport-netty4]
+[2019-01-29T12:00:03,683][INFO ][o.e.p.PluginsService     ] [node2] loaded module [tribe]
+[2019-01-29T12:00:03,684][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ccr]
+[2019-01-29T12:00:03,684][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-core]
+[2019-01-29T12:00:03,684][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-deprecation]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-graph]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-logstash]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-ml]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-monitoring]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-rollup]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-security]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-sql]
+[2019-01-29T12:00:03,685][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-upgrade]
+[2019-01-29T12:00:03,686][INFO ][o.e.p.PluginsService     ] [node2] loaded module [x-pack-watcher]
+[2019-01-29T12:00:03,686][INFO ][o.e.p.PluginsService     ] [node2] no plugins loaded
+[2019-01-29T12:00:09,743][INFO ][o.e.x.s.a.s.FileRolesStore] [node2] parsed [0] roles from file [/Users/lee/Documents/Github/ElasticSearchProject/node2/config/roles.yml]
+[2019-01-29T12:00:10,665][INFO ][o.e.x.m.j.p.l.CppLogMessageHandler] [node2] [controller/80902] [Main.cc@109] controller (64 bit): Version 6.5.4 (Build b616085ef32393) Copyright (c) 2018 Elasticsearch BV
+[2019-01-29T12:00:11,403][DEBUG][o.e.a.ActionModule       ] [node2] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2019-01-29T12:00:11,822][INFO ][o.e.d.DiscoveryModule    ] [node2] using discovery type [zen] and host providers [settings]
+[2019-01-29T12:00:13,208][INFO ][o.e.n.Node               ] [node2] initialized
+[2019-01-29T12:00:13,209][INFO ][o.e.n.Node               ] [node2] starting ...
+[2019-01-29T12:00:13,479][INFO ][o.e.t.TransportService   ] [node2] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2019-01-29T12:00:16,658][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}
+[2019-01-29T12:00:16,665][INFO ][o.e.c.s.ClusterApplierService] [node2] new_master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2019-01-29T12:00:16,705][INFO ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [node2] publish_address {127.0.0.1:9201}, bound_addresses {[::1]:9201}, {127.0.0.1:9201}
+[2019-01-29T12:00:16,705][INFO ][o.e.n.Node               ] [node2] started
+[2019-01-29T12:00:17,368][WARN ][o.e.x.s.a.s.m.NativeRoleMappingStore] [node2] Failed to clear cache for realms [[]]
+[2019-01-29T12:00:17,471][INFO ][o.e.l.LicenseService     ] [node2] license [01859a27-6fd5-47fb-a7a6-419a9d244d21] mode [basic] - valid
+[2019-01-29T12:00:17,491][INFO ][o.e.g.GatewayService     ] [node2] recovered [2] indices into cluster_state
+[2019-01-29T12:00:20,049][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-node-join[{node3}{h2hIpXC_Tv2Ze80D7dUejw}{4VoC-kHIRm2u5tT7FF-wiA}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}], reason: added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{4VoC-kHIRm2u5tT7FF-wiA}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}
+[2019-01-29T12:00:20,661][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node3}{h2hIpXC_Tv2Ze80D7dUejw}{4VoC-kHIRm2u5tT7FF-wiA}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [9] source [zen-disco-node-join[{node3}{h2hIpXC_Tv2Ze80D7dUejw}{4VoC-kHIRm2u5tT7FF-wiA}{127.0.0.1}{127.0.0.1:9301}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}]]])
+[2019-01-29T12:00:20,667][WARN ][o.e.d.z.ElectMasterService] [node2] value for setting "discovery.zen.minimum_master_nodes" is too low. This can result in data loss! Please set it to at least a quorum of master-eligible nodes (current value: [-1], total number of master-eligible nodes used for publishing in this round: [2])
+[2019-01-29T12:00:21,027][INFO ][o.e.c.r.a.AllocationService] [node2] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[news][1], [customer][2], [customer][3]] ...]).
+[2019-01-29T12:00:22,354][INFO ][o.e.c.s.MasterService    ] [node2] zen-disco-node-join[{node1}{yLktuNUWRzOwUizM7se3hQ}{78AQd4GiTSmn_BtxpLb50w}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}], reason: added {{node1}{yLktuNUWRzOwUizM7se3hQ}{78AQd4GiTSmn_BtxpLb50w}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}
+[2019-01-29T12:00:22,983][INFO ][o.e.c.s.ClusterApplierService] [node2] added {{node1}{yLktuNUWRzOwUizM7se3hQ}{78AQd4GiTSmn_BtxpLb50w}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true},}, reason: apply cluster state (from master [master {node2}{kqbsky1KTLaGcXvmbSUYpg}{aeOiVO8zToyYXCFZAD3zmQ}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17179869184, xpack.installed=true, ml.max_open_jobs=20, ml.enabled=true} committed version [23] source [zen-disco-node-join[{node1}{yLktuNUWRzOwUizM7se3hQ}{78AQd4GiTSmn_BtxpLb50w}{127.0.0.1}{127.0.0.1:9302}{ml.machine_memory=17179869184, ml.max_open_jobs=20, xpack.installed=true, ml.enabled=true}]]])
+[2019-01-29T12:00:22,993][INFO ][o.e.c.r.a.AllocationService] [node2] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[news][3]] ...]).
+[2019-01-29T12:29:57,138][INFO ][o.e.c.m.MetaDataCreateIndexService] [node2] [shakespeare] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2019-01-29T12:29:57,792][INFO ][o.e.c.r.a.AllocationService] [node2] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[shakespeare][1]] ...]).
