@@ -49,3 +49,37 @@ POST http://localhost:9200/customer/news
   action.destructive_requires_name: true
 ```
 
+## 벌크 인서트
+```
+  POST http://localhost:9200/shakespeare/act/_bulk
+  
+{"index":{"_index":"shakespeare","_type":"act","_id":0}}
+{"line_id":1,"play_name":"Henry IV","speech_number":"","line_number":"","speaker":"","text_entry":"ACT I"}
+
+{"index":{"_index":"shakespeare","_type":"scene","_id":1}}
+{"line_id":2,"play_name":"Henry IV","speech_number":"","line_number":"","speaker":"","text_entry":"SCENE I. London. The palace."}
+
+{"index":{"_index":"shakespeare","_type":"line","_id":2}}
+{"line_id":3,"play_name":"Henry IV","speech_number":"","line_number":"","speaker":"","text_entry":"Enter KING HENRY, LORD JOHN OF LANCASTER, the EARL of WESTMORELAND, SIR WALTER BLUNT, and others"}
+
+{"index":{"_index":"shakespeare","_type":"line","_id":3}}
+{"line_id":4,"play_name":"Henry IV","speech_number":1,"line_number":"1.1.1","speaker":"KING HENRY IV","text_entry":"So shaken as we are, so wan with care,"}
+
+{"index":{"_index":"shakespeare","_type":"line","_id":4}}
+{"line_id":5,"play_name":"Henry IV","speech_number":1,"line_number":"1.1.2","speaker":"KING HENRY IV","text_entry":"Find we a time for frighted peace to pant,"}
+
+{"index":{"_index":"shakespeare","_type":"line","_id":5}}
+{"line_id":6,"play_name":"Henry IV","speech_number":1,"line_number":"1.1.3","speaker":"KING HENRY IV","text_entry":"And breathe short-winded accents of new broils"}
+
+{"index":{"_index":"shakespeare","_type":"line","_id":6}}
+{"line_id":7,"play_name":"Henry IV","speech_number":1,"line_number":"1.1.4","speaker":"KING HENRY IV","text_entry":"To be commenced in strands afar remote."}
+  
+```
+
+## 벌크 DELETE
+```
+    { "delete":{"_index":"shakespeare","_type":"act","_id":0} }
+    { "delete":{"_index":"shakespeare","_type":"act","_id":1} }
+    { "delete":{"_index":"shakespeare","_type":"act","_id":2} }
+```
+
