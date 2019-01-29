@@ -83,3 +83,97 @@ POST http://localhost:9200/customer/news
     { "delete":{"_index":"shakespeare","_type":"act","_id":2} }
 ```
 
+## 매핑
+1.ElasticSearch 별도 스키마 설정이 없이도 자동으로 자료구조를 명시적으로 제어하고 싶을 때 매핑을 이용한다.
+2.데이터가 입력되면 자동으로 매핑되어 매핑이 저장된다.
+3.한 인덱스에 매핑을 여러개 만들수 있으나, 필드명은 중복되면 안된다.
+4.매핑은 삭제할 수 없다. 
+
+```
+  PUT http://localhost:9200/news
+  
+  {
+      "mappings" : {
+          "news" : {
+          
+          }
+      }
+  }
+```
+
+데이터를 입력하면 자동으로 매핑을 하기때문에, 위 처럼 매핑을 안해도 아래처럼 조회가 된다.
+```
+   GET http://localhost:9200/customer/_mapping/news
+```
+
+## 분석기 추가 매핑
+```
+{
+   "mappings" : {
+     "article" : {
+        "properties" : {
+           "id" : {"type":"long", "store":"yes", "precision_step":"8"}
+           "title" : {"type":"string", "store":"yes", "index":"analyzed"},
+           "link" : {"type":"string"},
+           "content" : {"type":"string","store":"no","index":"analyzed"},
+           "reg_date" : {"type" : "date"}
+        }
+     }
+   }
+}
+```
+
+## 커스텀 분석기
+1. 셋팅을 하기전에 인덱스를 close 시켜야 한다.
+```
+    http://localhost:9200/news/_close
+```
+2. 작업 완료 후 다시 open한다.
+```
+    http://localhost:9200/news/_open
+```
+
+```
+    PUT  http://localhost:9200/news/_settings
+    {
+       "settings" : {
+          "analysis" : {
+            "analyzer" : {
+              "my_english_analyzer": {
+                  "type" : "standard",
+                  "max_token_length" : 5,
+                  "stopwords" : "_english_"
+                  
+              }
+            }
+          }
+       }
+    }
+    
+    my_english_analyzer 라는 이름으로  생성하고, english라는 단어 기준 
+```
+
+## 좀 더 복잡한 분석기 셋팅
+```
+    PUT  http://localhost:9200/news/_settings
+    {
+       "settings" : {
+          "analysis" : {
+            "analyzer" : {
+              "my_english_analyzer": {
+                  "type" : "custom",
+                  "tokenizer" : "standard",
+                  "char_filter":[
+                    "html_strip"
+                  ],
+                  "filter" : [
+                    "lowercase",
+                    "asciifolding"
+                  ]
+              }
+            }
+          }
+       }
+    }
+    
+```
