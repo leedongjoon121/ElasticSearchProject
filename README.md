@@ -1,5 +1,8 @@
 # ElasticSearch 테스트
 
+
+<hr/>
+
 # 실습
 
 ## 데이터 생성
@@ -176,4 +179,70 @@ POST http://localhost:9200/customer/news
        }
     }
     
+```
+
+## 셋팅 내역 확인
+    GET  http://localhost:9200/news/_settings
+    
+## 분석기 테스트
+```
+POST  http://localhost:9200/news/_analyze
+{
+   "analyzer" : "my_custom_analyzer",
+   "text" : "Hi my name is Joon. "
+}
+```
+
+```
+POST  http://localhost:9200/news/_analyze
+{
+   "tokenizer" : "keyword",
+   "filter" : ["lowercase"],
+   "text" : "Hi my name is Joon. this is a test "
+}
+```
+
+## 좌표검색
+
+```
+POST  http://localhost:9200/news/_mapping/store
+{
+   "properties" : {
+      "store_name" : {
+         "type" : "string"
+      },
+      "location" : {
+         "type" : "geo_point"
+      }
+   }
+}
+```
+
+
+데이터 입력
+```
+  "store_name" : "스타벅스 영천점"
+  "location" : "37.52334,126.22523" 
+```
+
+좌표검색
+```
+{
+   "query" : {
+      "filtered" : {
+         "query" : {
+            "match_all" : {}
+         },
+         "filter" : {
+            "geo_distance" : {
+               "distance" : "200km",
+               "location" : {
+                   "lat" : 37.2234,
+                   "lon" : 126.33242
+               }               
+            }
+         }
+      }
+   }
+}  
 ```
