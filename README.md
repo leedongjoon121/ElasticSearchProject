@@ -29,3 +29,23 @@ POST http://localhost:9200/customer/news
 
 - PUT으로 수정할 경우, 데이터를 하나 수정하면 수정되지만, 다른 필드가 사라지게 된다. 
 
+## 데이터 삭제
+### 키값을 통해 삭제 한다.
+```
+   XDELETE PUT http://localhost:9200/customer/news/1
+   
+   customer 인덱스의 new 타입의 id 1 삭제 
+```
+
+### 모든 인덱스를 삭제할 경우  
+- '*' 또는 'all'을 활용한다.
+```
+    $ curl -XDELETE http://localhost:9200/*
+    $ curl -XDELETE http://localhost:9200/_all
+```
+
+- 모든 인덱스 삭제가 위험해서, 사전에 모든 삭제를 방지하는 옵션 : .yml에 추가한다.
+```
+  action.destructive_requires_name: true
+```
+
